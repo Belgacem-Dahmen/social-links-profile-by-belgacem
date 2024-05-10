@@ -1,0 +1,111 @@
+:root {
+    /* Couleurs primaires */
+    --green: hsl(75, 94%, 57%);
+
+    /* Couleurs neutres */
+    --white: hsl(0, 0%, 100%);
+    --grey: hsl(0, 0%, 20%);
+    --dark-grey: hsl(0, 0%, 12%);
+    --off-black: hsl(0, 0%, 8%);
+
+
+    /* fonts */
+    --fw-normal: 400;
+    --fw-bold: 600;
+    --fs-normal: 14px;
+    --ff-font: "Inter", sans-serif;
+}
+
+
+* {
+    padding: 0;
+}
+
+
+body {
+    font-family: var(--ff-font);
+    font-size: var(--fs-normal);
+    background-color: var(--off-black);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+}
+
+
+
+@media only screen and (max-width: 375px) {
+
+    /* Ajoutez vos styles pour les appareils mobiles ici */
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        padding: 0px 30px;
+        font-weight: bold;
+        gap: 15px;
+    }
+}
+
+/* Styles pour desktop (1440px) */
+.social-card {
+    overflow: hidden;
+    color: var(--white);
+    margin: auto;
+    border-radius: 10px;
+    background-color: var(--dark-grey);
+    width: 375px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.social-card-header {
+    padding: 25px;
+
+}
+
+.avatar {
+    border-radius: 50%;
+    width: 100px;
+}
+
+.social-card-header h3 {
+    color: var(--green);
+}
+
+.social-card-header p {
+    margin-top: 35px;
+    color: var(--white);
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 40px;
+    font-weight: bold;
+    gap: 15px;
+}
+
+.btn {
+    padding: 18px 0px;
+    color: var(--white);
+    border: none;
+    border-radius: 10px;
+    background-color: var(--grey);
+    font-weight: var(--fw-bold);
+}
+
+.btn:last-child {
+    margin-bottom: 40px;
+}
+
+.btn:hover {
+    padding: 18px 0px;
+    color: var(--grey);
+    background-color: var(--green);
+    cursor: pointer;
+
+
+}
